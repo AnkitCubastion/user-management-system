@@ -1,0 +1,40 @@
+{
+  "user": [
+    {
+      "id": "5c05",
+      "role": "admin",
+      "fullName": "Ankit",
+      "email": "ankit@gmail.com",
+      "password": "12345",
+      "profilePicture": "https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "bio": "Mechanical Engineer",
+      "interests": "React",
+      "department": "",
+      "empID": "00001"
+    },
+    {
+      "id": "897d",
+      "role": "user",
+      "fullName": "Ashit",
+      "email": "ashit@gmail.com",
+      "password": "12345",
+      "profilePicture": "https://wallpapers.com/images/hd/cool-profile-picture-87h46gcobjl5e4xu.jpg",
+      "bio": "Metallurgy Engineer",
+      "interests": "Angular",
+      "department": "",
+      "empID": ""
+    },
+    {
+      "id": "4cd7",
+      "role": "editor",
+      "fullName": "Anku",
+      "email": "anku@gmail.com",
+      "password": "12345",
+      "profilePicture": "https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "bio": "Mechanical Engineer",
+      "interests": "C, C++",
+      "department": "HR",
+      "empID": ""
+    }
+  ]
+}
