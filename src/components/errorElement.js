@@ -1,7 +1,8 @@
 import React from "react";
+import "./errorElement.css";
 
 const ErrorElement = () => {
-  return <div>ErrorElement</div>;
+  return <div className="error-container"></div>;
 };
 
 export default ErrorElement;
