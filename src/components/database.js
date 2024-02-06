@@ -2,7 +2,6 @@ import React from "react";
 import { useQuery } from "react-query";
 import axios from "axios";
 import SingleUser from "./singleUser";
-import "./database.css";
 import { useUserContext } from "../context/userContext";
 
 const Database = () => {
