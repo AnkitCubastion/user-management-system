@@ -75,7 +75,6 @@ const Signup = () => {
     }
 
     if (fieldName === "password" && touchedFields.includes("password")) {
-      // Add your custom password validation logic here
       if (value.length < 5) {
         isValid = false;
         errorMessage = "Password must be at least 5 characters long";

@@ -4,7 +4,6 @@ import "./profile.css";
 
 const Profile = () => {
   const email = localStorage.getItem("email");
-  // console.log(email);
   const [data, setData] = useState({});
 
   useEffect(() => {
@@ -15,7 +14,6 @@ const Profile = () => {
             email: email,
           },
         });
-        // console.log(response.data[0]);
         setData(response.data[0]);
       } catch (error) {
         alert("Some Error Happen!");
@@ -23,8 +21,6 @@ const Profile = () => {
     };
     fetchData();
   }, [email]);
-
-  // console.log(data);
 
   return (
     <div className="profile-container">

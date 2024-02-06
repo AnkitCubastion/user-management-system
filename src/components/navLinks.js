@@ -4,7 +4,6 @@ import "./navlinks.css";
 const links = [
   { id: 1, url: "/", text: "Home" },
   { id: 2, url: "profile", text: "Profile" },
-  // { id: 3, url: "database", text: "Database" },
 ];
 
 const NavLinks = () => {

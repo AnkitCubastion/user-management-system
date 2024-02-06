@@ -8,23 +8,6 @@ import { useUserContext } from "../context/userContext";
 const Database = () => {
   const { users, updateUserList } = useUserContext();
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await axios.get("http://localhost:3000/user", {
-  //         params: {
-  //           role: "user",
-  //         },
-  //       });
-  //       updateUserList(response.data);
-  //     } catch (error) {
-  //       alert("Some Error Happened!");
-  //     }
-  //   };
-
-  //   fetchData();
-  // }, [updateUserList]);
-
   const { data, isLoading, isError } = useQuery(
     "fetchUsers",
     async () => {
