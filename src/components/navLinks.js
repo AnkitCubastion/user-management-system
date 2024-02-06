@@ -11,6 +11,10 @@ const NavLinks = () => {
   const email = localStorage.getItem("email");
   const role = localStorage.getItem("role");
   const canAccessDatabase = role === "admin" || role === "editor";
+  const handleLogout = () => {
+    localStorage.clear();
+    window.location.reload();
+  };
 
   return (
     <div className="nav-links">
@@ -31,6 +35,11 @@ const NavLinks = () => {
 
       <div id="navbar-role">Role: {role}</div>
       <div>Welcome, {email}</div>
+      <div>
+        <button className="logout-btn" onClick={handleLogout}>
+          Logout
+        </button>
+      </div>
     </div>
   );
 };

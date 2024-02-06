@@ -10,3 +10,9 @@
 #navbar-role {
   color: green;
 }
+
+.logout-btn {
+  background: rgb(255, 0, 0);
+  border: none;
+  border-radius: 5px;
+}

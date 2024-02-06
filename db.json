@@ -35,6 +35,66 @@
       "interests": "C, C++",
       "department": "HR",
       "empID": ""
+    },
+    {
+      "id": "c497",
+      "role": "user",
+      "fullName": "Jayesh",
+      "email": "jayesh@gmail.com",
+      "password": "12345",
+      "profilePicture": "https://pics.craiyon.com/2023-07-15/dc2ec5a571974417a5551420a4fb0587.webp",
+      "bio": "Civil Science Engineer",
+      "interests": "Angular",
+      "department": "",
+      "empID": ""
+    },
+    {
+      "id": "5180",
+      "role": "user",
+      "fullName": "Abhishek",
+      "email": "abhishek@gmail.com",
+      "password": "12345",
+      "profilePicture": "https://imgv3.fotor.com/images/blog-richtext-image/10-profile-picture-ideas-to-make-you-stand-out.jpg",
+      "bio": "Computer Science Engineer",
+      "interests": "Node",
+      "department": "",
+      "empID": ""
+    },
+    {
+      "id": "a34b",
+      "role": "user",
+      "fullName": "Sunil",
+      "email": "sunil@gmail.com",
+      "password": "12345",
+      "profilePicture": "https://play-lh.googleusercontent.com/C9CAt9tZr8SSi4zKCxhQc9v4I6AOTqRmnLchsu1wVDQL0gsQ3fmbCVgQmOVM1zPru8UH=w240-h480-rw",
+      "bio": "Civil Engineer",
+      "interests": "Angular",
+      "department": "",
+      "empID": ""
+    },
+    {
+      "id": "897d",
+      "role": "user",
+      "fullName": "Ashit",
+      "email": "ashit@gmail.com",
+      "password": "12345",
+      "profilePicture": "https://wallpapers.com/images/hd/cool-profile-picture-87h46gcobjl5e4xu.jpg",
+      "bio": "Metallurgy Engineer",
+      "interests": "Angular",
+      "department": "",
+      "empID": ""
+    },
+    {
+      "id": "170a",
+      "role": "user",
+      "fullName": "Vipeen",
+      "email": "vipeen@gmail.com",
+      "password": "12345",
+      "profilePicture": "https://images.unsplash.com/photo-1618641986557-1ecd230959aa?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D",
+      "bio": "Mechanical Engineer",
+      "interests": "Angular",
+      "department": "",
+      "empID": ""
     }
   ]
 }
