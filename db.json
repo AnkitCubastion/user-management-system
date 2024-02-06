@@ -121,26 +121,14 @@
       "empID": ""
     },
     {
-      "id": "f4cf",
-      "role": "user",
-      "fullName": "Sonu",
-      "email": "sonu@gmail.com",
-      "password": "12345",
-      "profilePicture": "https://i.pinimg.com/564x/d9/56/9b/d9569bbed4393e2ceb1af7ba64fdf86a.jpg",
-      "bio": "Mec. Eng",
-      "interests": "Programming",
-      "department": "",
-      "empID": ""
-    },
-    {
       "id": "a6e7",
       "role": "user",
       "fullName": "Monu",
       "email": "monu@gmail.com",
       "password": "12345",
       "profilePicture": "https://wallpapers.com/images/hd/cool-profile-picture-awled9dwo4qq2yv2.jpg",
-      "bio": "Mec, Eng",
-      "interests": "Badminton, Chess",
+      "bio": "Mec. Eng",
+      "interests": "Badminton",
       "department": "",
       "empID": ""
     },
