@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./navlinks.css";
+import "./navLinks.css";
 
 const links = [
   { id: 1, url: "/", text: "Home" },

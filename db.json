@@ -121,18 +121,6 @@
       "empID": ""
     },
     {
-      "id": "a6e7",
-      "role": "user",
-      "fullName": "Monu",
-      "email": "monu@gmail.com",
-      "password": "12345",
-      "profilePicture": "https://wallpapers.com/images/hd/cool-profile-picture-awled9dwo4qq2yv2.jpg",
-      "bio": "Mec. Eng",
-      "interests": "Badminton",
-      "department": "",
-      "empID": ""
-    },
-    {
       "id": "3882",
       "role": "user",
       "fullName": "Vikash",
