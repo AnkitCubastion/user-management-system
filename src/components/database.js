@@ -1,4 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { useQuery } from "react-query";
 import axios from "axios";
 import SingleUser from "./singleUser";
 import "./database.css";
@@ -7,22 +8,49 @@ import { useUserContext } from "../context/userContext";
 const Database = () => {
   const { users, updateUserList } = useUserContext();
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get("http://localhost:3000/user", {
-          params: {
-            role: "user",
-          },
-        });
-        updateUserList(response.data);
-      } catch (error) {
-        alert("Some Error Happened!");
-      }
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await axios.get("http://localhost:3000/user", {
+  //         params: {
+  //           role: "user",
+  //         },
+  //       });
+  //       updateUserList(response.data);
+  //     } catch (error) {
+  //       alert("Some Error Happened!");
+  //     }
+  //   };
 
-    fetchData();
-  }, [updateUserList]);
+  //   fetchData();
+  // }, [updateUserList]);
+
+  const { data, isLoading, isError } = useQuery(
+    "fetchUsers",
+    async () => {
+      const response = await axios.get("http://localhost:3000/user", {
+        params: {
+          role: "user",
+        },
+      });
+      console.log(data);
+
+      return response.data;
+    },
+    {
+      onSuccess: (data) => {
+        updateUserList(data);
+      },
+    }
+  );
+
+  if (isLoading) {
+    return <p>Loading...</p>;
+  }
+
+  if (isError) {
+    return <p>Error fetching users</p>;
+  }
 
   return (
     <div className="database-container">

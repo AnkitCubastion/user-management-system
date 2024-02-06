@@ -1,14 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-// import { UserProvider } from "./userContext";
 import { UserProvider } from "./context/userContext";
+import { QueryClient, QueryClientProvider } from "react-query";
+
+const queryClient = new QueryClient();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
-    <UserProvider>
-      <App />
-    </UserProvider>
+    <QueryClientProvider client={queryClient}>
+      <UserProvider>
+        <App />
+      </UserProvider>
+    </QueryClientProvider>
   </>
 );

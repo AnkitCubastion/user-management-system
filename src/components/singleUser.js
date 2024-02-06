@@ -12,13 +12,14 @@ const SingleUser = ({ user }) => {
     interests: interests,
   });
 
-  const [modalOpen, setModalOpen] = useState(false);
+  const [editModalOpen, setEditModalOpen] = useState(false);
+  const [deleteModalOpen, setDeleteModalOpen] = useState(false);
 
   const handleEdit = async () => {
     try {
       await axios.patch(`http://localhost:3000/user/${id}`, editedInfo);
       alert(`User with ID ${id} edited successfully`);
-      setModalOpen(false);
+      setEditModalOpen(false);
       window.location.reload();
     } catch (error) {
       alert("Error editing user:", error.message);
@@ -29,18 +30,27 @@ const SingleUser = ({ user }) => {
     try {
       await axios.delete(`http://localhost:3000/user/${id}`);
       alert(`User with ID ${id} deleted successfully`);
+      setDeleteModalOpen(false);
       window.location.reload();
     } catch (error) {
       alert("Error deleting user:", error.message);
     }
   };
 
-  const openModal = () => {
-    setModalOpen(true);
+  const openEditModal = () => {
+    setEditModalOpen(true);
   };
 
-  const closeModal = () => {
-    setModalOpen(false);
+  const closeEditModal = () => {
+    setEditModalOpen(false);
+  };
+
+  const openDeleteModal = () => {
+    setDeleteModalOpen(true);
+  };
+
+  const closeDeleteModal = () => {
+    setDeleteModalOpen(false);
   };
 
   const handleInputChange = (e) => {
@@ -63,13 +73,13 @@ const SingleUser = ({ user }) => {
         <p>{interests}</p>
       </div>
       <div className="manipulation-btn">
-        <button onClick={openModal} className="edit-btn">
+        <button onClick={openEditModal} className="edit-btn">
           Edit
         </button>
-        {modalOpen && (
+        {editModalOpen && (
           <div className="modal">
             <div className="modal-content">
-              <span className="close" onClick={closeModal}>
+              <span className="close" onClick={closeEditModal}>
                 &times;
               </span>
               <label htmlFor="edit-user-information">
@@ -106,7 +116,7 @@ const SingleUser = ({ user }) => {
                 value={editedInfo.interests}
                 onChange={handleInputChange}
               />
-              <button onClick={handleEdit} className="confirm-btn">
+              <button onClick={handleEdit} className="confirm-edit-btn">
                 Confirm Edit
               </button>
             </div>
@@ -114,9 +124,22 @@ const SingleUser = ({ user }) => {
         )}
         {role === "admin" && (
           <>
-            <button onClick={handleDelete} className="delete-btn">
+            <button onClick={openDeleteModal} className="delete-btn">
               Delete
             </button>
+            {deleteModalOpen && (
+              <div className="modal">
+                <div className="modal-content">
+                  <span className="close" onClick={closeDeleteModal}>
+                    &times;
+                  </span>
+                  <label>Are you sure you want to delete this user?</label>
+                  <button onClick={handleDelete} className="confirm-delete-btn">
+                    Confirm Delete
+                  </button>
+                </div>
+              </div>
+            )}
           </>
         )}
       </div>
