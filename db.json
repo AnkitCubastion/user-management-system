@@ -13,18 +13,6 @@
       "empID": "00001"
     },
     {
-      "id": "897d",
-      "role": "user",
-      "fullName": "Ashit",
-      "email": "ashit@gmail.com",
-      "password": "12345",
-      "profilePicture": "https://wallpapers.com/images/hd/cool-profile-picture-87h46gcobjl5e4xu.jpg",
-      "bio": "Metallurgy Engineer",
-      "interests": "Angular",
-      "department": "",
-      "empID": ""
-    },
-    {
       "id": "4cd7",
       "role": "editor",
       "fullName": "Anku",
@@ -34,18 +22,6 @@
       "bio": "Mechanical Engineer",
       "interests": "C, C++",
       "department": "HR",
-      "empID": ""
-    },
-    {
-      "id": "c497",
-      "role": "user",
-      "fullName": "Jayesh",
-      "email": "jayesh@gmail.com",
-      "password": "12345",
-      "profilePicture": "https://pics.craiyon.com/2023-07-15/dc2ec5a571974417a5551420a4fb0587.webp",
-      "bio": "Civil Science Engineer",
-      "interests": "Angular",
-      "department": "",
       "empID": ""
     },
     {
@@ -93,6 +69,18 @@
       "profilePicture": "https://images.unsplash.com/photo-1618641986557-1ecd230959aa?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D",
       "bio": "Mechanical Engineer",
       "interests": "Angular",
+      "department": "",
+      "empID": ""
+    },
+    {
+      "id": "c497",
+      "role": "user",
+      "fullName": "Jayesh",
+      "email": "jayesh@gmail.com",
+      "password": "12345",
+      "profilePicture": "https://pics.craiyon.com/2023-07-15/dc2ec5a571974417a5551420a4fb0587.webp",
+      "bio": "Civil Science Engineer",
+      "interests": "React",
       "department": "",
       "empID": ""
     }

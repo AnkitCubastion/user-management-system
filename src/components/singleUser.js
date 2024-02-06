@@ -1,9 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
+import "./singleUser.css";
 
-<<<<<<< Updated upstream
-const SingleUser = () => {
-  return <div>SingleUser</div>;
-=======
 const SingleUser = ({ user }) => {
   const { id, profilePicture, fullName, email, bio, interests } = user;
   const role = localStorage.getItem("role");
@@ -74,7 +72,9 @@ const SingleUser = ({ user }) => {
               <span className="close" onClick={closeModal}>
                 &times;
               </span>
-              <p>Edit User Information</p>
+              <label htmlFor="edit-user-information">
+                Edit User Information
+              </label>
               <label htmlFor="fullName">Full Name:</label>
               <input
                 type="text"
@@ -119,13 +119,9 @@ const SingleUser = ({ user }) => {
             </button>
           </>
         )}
-        {/* <button onClick={handleDelete} className="delete-btn">
-          Delete
-        </button> */}
       </div>
     </div>
   );
->>>>>>> Stashed changes
 };
 
 export default SingleUser;

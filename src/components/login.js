@@ -39,6 +39,7 @@ const Login = () => {
       localStorage.setItem("email", user.email);
       localStorage.setItem("role", user.role);
       navigate("/");
+      window.location.reload();
     } catch (error) {
       alert("Error logging in:");
     }

@@ -1,11 +1,8 @@
 import React, { useEffect } from "react";
 import axios from "axios";
-<<<<<<< Updated upstream
-=======
 import SingleUser from "./singleUser";
 import "./database.css";
 import { useUserContext } from "../context/userContext";
->>>>>>> Stashed changes
 
 const Database = () => {
   const { users, updateUserList } = useUserContext();
@@ -18,11 +15,7 @@ const Database = () => {
             role: "user",
           },
         });
-<<<<<<< Updated upstream
-        console.log(response);
-=======
         updateUserList(response.data);
->>>>>>> Stashed changes
       } catch (error) {
         alert("Some Error Happened!");
       }
@@ -34,7 +27,11 @@ const Database = () => {
   return (
     <div className="database-container">
       <h1>Database</h1>
-      <div className="database-subcontainer"></div>
+      <div className="database-subcontainer">
+        {users.map((user) => (
+          <SingleUser key={user.id} user={user} />
+        ))}
+      </div>
     </div>
   );
 };
